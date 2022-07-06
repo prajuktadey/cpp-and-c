@@ -1,11 +1,10 @@
-
 namespace uiuc
 {
 class cube //keyword class followed by the name of the class
 {
    public: //public protection region
       cube(); //custom default constructor
-      cube(double length);//one argument constructor
+      cube(const cube & obj);
 
       double getVolume();
       double getSurfaceArea();
