@@ -11,7 +11,7 @@ struct employee
 };
 int main()
 {
-    // struct employee e[100];
+    struct employee e[100];
     struct employee *ptr;
     int n;
     float DA,HRA;

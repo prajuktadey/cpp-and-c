@@ -123,9 +123,9 @@ void main()
 	scanf("%d",&rollNumber);
 	displayDetailsStudent(students,numberStudents,rollNumber);
 	
-	printf("Enter the student's percentage 1 to search: ");
+	printf("Enter the upper bound percentage: ");
 	scanf("%f",&percentage1);
-	printf("Enter the student's percentage 2 to search: ");
+	printf("Enter the lower bound percentage: ");
 	scanf("%f",&percentage2);
 	displayDetailsSudentsPercentageRange(students,numberStudents,percentage1,percentage2);
 	
