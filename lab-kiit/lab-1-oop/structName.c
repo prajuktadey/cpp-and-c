@@ -1,5 +1,4 @@
 //WAP to input name, roll number and marks in 5 subjects for a student, and display it. 
-
 #include <stdio.h>
 struct student //structure definition 
 {
@@ -30,6 +29,5 @@ int main()
     {
     printf("Marks in subject %d: %f\n", i, s.marks[i]);
     }
-
     return 0;
 }
