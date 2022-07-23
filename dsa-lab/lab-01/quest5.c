@@ -3,39 +3,43 @@ element. The next greater element for an element x is the first greater element 
 right side of x in array. Elements for which no greater element exist, consider next
 greater element as -1.*/
 
-#include <stdio.h>
- 
-// Find the next greater element for every element in an array
-void findNextGreaterElements(int input[], int n)
-{
-    // do for each element
-    for (int i = 0; i < n; i++)
-    {
-        // keep track of the next greater element for element `input[i]`
-        int next = -1;
- 
-        // process elements on the right of element `input[i]`
-        for (int j = i + 1; j < n; j++)
-        {
-            // break the inner loop at the first larger element on the
-            // right of element `input[i]`
-            if (input[j] > input[i])
-            {
-                next = input[j];
+#include<stdio.h> 
+
+//prints the next greater element 
+void printNGE(int arr[], int n) //parameters: array[] with size n
+{ 
+    int next, i, j; 
+    for (i=0; i<n; i++) 
+    { 
+        next = -1; //default of next is -1
+        for (j = i+1; j<n; j++) 
+        { 
+            if (arr[i] < arr[j]) //if the next element in the array is greater, then store the number in next and display it
+            { 
+                next = arr[j]; 
                 break;
-            }
-        }
- 
-        printf("%d ", next);
+            } 
+        } 
+        printf("%d  |  %d\n", arr[i], next); 
+    } 
+} 
+  
+int main() 
+{ 
+    int num;
+    printf("Enter the size of array: ");
+    scanf("%d",&num);
+    printf("\n");
+
+    int arr[num];
+
+    printf("Enter the array elements: \n");
+    for(int i=0;i<num;i++)
+    {
+        scanf("%d",&arr[i]);
     }
-}
- 
-int main(void)
-{
-    int input[]={};
-    int n = sizeof(input) / sizeof(input[0]);
- 
-    findNextGreaterElements(input, n);
- 
-    return 0;
-}
+
+    int n = sizeof(arr)/sizeof(arr[0]); 
+    printNGE(arr, n); 
+    return 0; 
+} 
