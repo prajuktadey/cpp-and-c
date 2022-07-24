@@ -10,7 +10,7 @@ int main()
     {
         printf("%p\n", p);
         p++;//incremented by 4 bytes
-        //incremnentig the pointer refernces to the next address in the array
+        //incrementing the pointer refernces to the next address in the array
     }
 
     return 0;
