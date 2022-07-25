@@ -40,3 +40,6 @@ int main()
     return 0;
 
 }
+
+/*a pointer member of a struture is still an address and it
+must be treated that way*/
