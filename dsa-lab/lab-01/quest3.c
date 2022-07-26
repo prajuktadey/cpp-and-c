@@ -23,7 +23,7 @@ int main()
     {
       int pos=i+1;
       count++;
-      printf("The position of the element searched: %d", pos);
+      printf("The position of the element searched: %d\n", pos);
     }
   }
 
