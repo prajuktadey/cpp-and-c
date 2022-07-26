@@ -21,6 +21,7 @@ int main()
     for(i=0;i<5;i++)
     {
         printf("Enter information of student %d:\n",i+1);
+        printf("\n");
         printf("Enter name: ");
         fgets(s[i].name, sizeof(s[i].name), stdin);
 
