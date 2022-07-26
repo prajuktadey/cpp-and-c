@@ -14,18 +14,21 @@ int main()
     printf("Enter number of employee : ");
     scanf("%d",&n);
     struct employee s[n];
-    struct employee *emp;
-    emp = &s[0];
+    struct employee *emp; //structure variable pointer
+    emp = &s[0]; //assign structure pointer
     for(int i=0; i<n; i++)
     {
+        //input
         printf("Enter id of employee : ");
-        scanf("%d",&(emp+i)->id);
+        scanf("%d",&(emp+i)->id);//pointer to ith row
         printf("Enter name of employee : ");
         scanf(" %[^\n]",(emp+i)->name);
         printf("Enter age of employee : ");
         scanf("%f",&(emp+i)->age);
         printf("Enter gross salary of employee : ");
         scanf("%f",&(emp+i)->bs);
+
+        //calculation 
         da=0.8*((emp+i)->bs);
         hra=0.1*((emp+i)->bs);
         (emp+i)->gs=(emp+i)->bs+da+hra;
