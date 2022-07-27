@@ -11,10 +11,10 @@ int main()
     cout << "Enter the string: ";
     cin >> s1 ;
 
-    cout<<"Enter the starting limit limit: ";
+    cout<<"Enter the starting limit: ";
     cin >> a ;
 
-    cout<<"Enter the ending limit limit: ";
+    cout<<"Enter the ending limit: ";
     cin >> b ;
 
     string r = s1.substr(a, b);
