@@ -23,8 +23,7 @@ int main()
     if(cmp==0)
         cout<<"\nStrings are equal.";
     else
-        cout<<"\nStrings are not equal";
-
+        cout<<"\nStrings are not equal.";
     cout<<endl;
     return 0;
 }
