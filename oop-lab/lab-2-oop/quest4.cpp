@@ -24,7 +24,5 @@ int main()
     {
         cout<<"The strings are not the same.";
     }
-
     return 0;
-
 }
