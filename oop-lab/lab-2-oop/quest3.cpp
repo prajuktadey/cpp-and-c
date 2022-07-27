@@ -20,7 +20,7 @@ int main()
     string r = s1.substr(a, b);
     cout<<"The substring is: "<<r<<endl;
 
-    cout<<"The length of the string is: "<<r.size();
+    cout<<"The length of the sub-string is: "<<r.size();
 
     return 0;
 
