@@ -36,7 +36,6 @@ int main()
  scanf("%d",&e.basic);
  printf("\n");
 
-
  da=(0.75 * e.basic);  
  hra=(0.25 * e.basic);    
  e.salary=(e.basic +da + hra);    
@@ -49,7 +48,6 @@ int main()
  printf("Department: %s\n",e.department);
 
  printf("Gross salary: %f\n",e.salary);
- 
  return 0; 
 
 }
