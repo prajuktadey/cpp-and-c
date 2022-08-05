@@ -1,0 +1,2 @@
+/*Write a program in C to find the largest number and counts the occurrence of the
+largest number in a dynamic array of n integers using a single loop.*/
