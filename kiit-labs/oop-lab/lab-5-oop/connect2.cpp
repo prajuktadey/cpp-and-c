@@ -1,0 +1,47 @@
+/*Create a class which stores a sting and its length as data members. Include all the
+constructors. Include a member function to join two strings and display the
+concatenated string.*/
+
+#include <iostream>
+using namespace std;
+
+class length
+{
+    private:
+        string s;
+        int l;
+
+    public:
+        void getDetails(string str, int n)
+        {
+            s = str;
+            l = n;
+        }
+        void showDetails()
+        {
+            cout << "String: " << s << endl;
+            cout << "Length: " << l << endl;
+        }
+
+        void strsum(string str1,string str2){
+            cout << "Added string: " << str1 << str2 << endl;
+        }
+};
+
+int main()
+{
+    string str1, str2;
+    cout<<"Enter first string: ";
+    cin>>str1;
+    cout<<"Enter second string: ";
+    cin>>str2;
+
+    length l;
+    l.getDetails(str1, str1.size());
+    l.showDetails();
+    l.getDetails(str2, str2.size());
+    l.showDetails();
+    l.strsum(str1, str2);
+
+    return 0;
+}
